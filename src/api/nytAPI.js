@@ -7,7 +7,7 @@ async function fetchMostPopArticleByPeriod (period) {
 }
 
 async function fetchMostPopArticleByAllPeriod () {
-  return await Promise.resolve([1, 7, 30].reduce(async(prev, period) => {
+  return await Promise.resolve(['1', '7', '30'].reduce(async(prev, period) => {
     const data = await fetchMostPopArticleByPeriod(period)
     return [].concat(await prev, {period:period, results: data.results})
   }, []))

@@ -1,16 +1,22 @@
 import {
   REQUEST_DATA_SUCCESS,
-  UPDATE_EVENT_INDEX
+  PERIOD_CHANGE
 } from '../actions/homeAction'
 
 export default (state = {
-  articles: []
+  articles: [],
+  period: '1'
 }, action) => {
  switch (action.type) {
   case REQUEST_DATA_SUCCESS:
    return {
     ...state,
     articles: action.payload
+   }
+  case PERIOD_CHANGE:
+   return {
+    ...state,
+    period: action.payload
    }
   default:
    return state
