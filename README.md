@@ -12,7 +12,7 @@ __
 Install stable nodeJS
  - [NVM](https://github.com/creationix/nvm#install-script)
 
-Clone this repository or extract folder from zip file:
+Clone this repository:
 ```
 git clone git@github.com:ifferrie/nyt-most-pop.git
 cd test-saowaluk
