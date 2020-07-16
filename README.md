@@ -15,7 +15,7 @@ Install stable nodeJS
 Clone this repository:
 ```
 git clone git@github.com:ifferrie/nyt-most-pop.git
-cd test-saowaluk
+cd nyt-most-pop
 ```
 Install JavaScript dependencies:
 ```
